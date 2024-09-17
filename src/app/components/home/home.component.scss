@@ -12,13 +12,16 @@ section {
     align-items: center;
 }
 
-
 .card-container {
-    flex: 1;
-    max-width: 35vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
     position: relative;
-    height: 35vw;
-    overflow: visible;
+  height: auto;
+}
+
+.testo{
+    width: 50vw;
 }
 
 .hexagon {
@@ -30,6 +33,7 @@ section {
     border-radius: 20px;
     box-shadow: 0 8px 25px rgba(9, 19, 157, 0.3);
     overflow: hidden;
+ 
 }
 
 .card-image {
@@ -45,16 +49,24 @@ section {
     
    
 }
-
+.card-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    width: 100%; 
+    height: auto;
+}
 .card-image:hover {
-    transform: translateX(-50%) scale(1.1); /* Effetto hover con zoom */
-    transition: transform 0.3s ease; /* Transizione dolce sull'hover */
+    transform: translateX(-50%) scale(1.1); 
+    transition: transform 0.3s ease;
 }
 
 .home-content h3{
     font-size: 3.2rem;
     font-weight: 700;
 }
+
 
 .home-content h3:nth-of-type(2) {
    margin-bottom: 2rem;
@@ -110,4 +122,15 @@ transition: .5s ease;
 
 .btn:hover {
      box-shadow:none
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.6rem;
+}
+
+cite {
+
+    font-weight: bold;
+    text-align: right;
 }
