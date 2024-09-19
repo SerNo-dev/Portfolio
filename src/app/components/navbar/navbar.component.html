@@ -3,7 +3,7 @@
   <i class='bx bx-menu' id="menu-icon"></i>
 
   <nav class="navbar">
-    <a [routerLink]="['/']" routerLinkActive="active" class="active">Home</a>
+    <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
     <a [routerLink]="['/about']" routerLinkActive="active">About</a>
     <a [routerLink]="['/services']" routerLinkActive="active">Services</a>
     <a [routerLink]="['/portfolio']" routerLinkActive="active">Portfolio</a>
