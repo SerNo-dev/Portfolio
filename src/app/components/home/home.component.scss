@@ -46,8 +46,8 @@ section {
     border-radius: 20px;
     filter: brightness(1.1) drop-shadow(0px 0px 10px rgba(0, 0, 0, 1));
     image-rendering: auto;
-    
-   
+
+
 }
 .card-container {
     display: flex;
@@ -56,6 +56,7 @@ section {
     position: relative;
     width: 100%; 
     height: auto;
+    overflow: hidden;
 }
 .card-image:hover {
     transform: translateX(-50%) scale(1.1); 
@@ -133,4 +134,41 @@ cite {
 
     font-weight: bold;
     text-align: right;
+}
+
+
+@media (max-width: 768px) { 
+
+    .home{
+        flex-direction: column;
+        height: 130vw;
+    }
+
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+
+
+
+    .card-container {
+     bottom: 10em;
+
+    }
+
+    .hexagon{
+
+        width: 50vw;
+        height: 50vw;
+   
+
+    }
+    .card-image{
+        width: 138vw;
+   
+    }
 }
