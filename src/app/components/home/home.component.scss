@@ -177,7 +177,30 @@ cite {
 
 }
 
+/* Media query per quando lo schermo è inferiore a 768px */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column; /* Cambia la direzione del flex a colonna */
+        align-items: center; /* Centra gli elementi */
+    }
 
+    .testo {
+        width: 80vw; /* Aumenta la larghezza del testo per risoluzioni più basse */
+    }
+
+    .hexagon {
+        width: 50vw; /* Riduci la dimensione dell'hexagon */
+        height: 50vw;
+    }
+
+    .card-container {
+     
+        margin-top: 8em; 
+       
+    }
+
+
+}
 
 @media (min-width: 360px) {
    
