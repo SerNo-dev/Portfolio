@@ -1,0 +1,9 @@
+#carousel3d {
+    width: 68vw; /* Assicura che il contenitore occupi tutta la larghezza disponibile */
+    height: 30vh; /* Riduci l'altezza per avvicinare le sfere alla parte superiore */
+    padding: 0;
+    margin: 0 auto; /* Assicurati che sia centrato orizzontalmente */
+    display: flex;
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: flex-start; /* Allinea il contenuto verso l'alto */
+}

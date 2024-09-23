@@ -96,3 +96,20 @@ transition: .5s ease;
     left: 0; 
     top: 0;
 }
+
+
+@media (max-width: 768px) { 
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .services  {
+        padding-bottom: 7rem;
+    }
+}
+
+
+

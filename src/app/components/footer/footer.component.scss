@@ -29,3 +29,13 @@
     font-size: 2.4rem;
     color: $second-bg-color;
 }
+
+@media (max-width:522px){
+    footer {
+        flex-direction: column-reverse;
+    }
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}

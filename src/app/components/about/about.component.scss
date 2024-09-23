@@ -64,3 +64,17 @@ transition: .5s ease;
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+
+
+@media (max-width: 768px) { 
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about img  {
+        width: 90vw;
+        margin-top: 4rem;
+    }
+
+}

@@ -38,8 +38,6 @@ span {
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    max-width: 30vw; 
-
 }
 .portfolio-box img {
     width: 100%; 
@@ -93,3 +91,28 @@ transform: scale(1.1);
     font-size: 2rem;
     color: $second-bg-color;
 }
+
+
+@media (max-width: 768px) {  
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 991px) { 
+    .portfolio{
+      padding-bottom:7rem;
+    }
+ }
+
+ @media (max-width: 617px) {  
+    
+    .portfolio-container{
+       grid-template-columns: 1fr;
+    }
+
+ }

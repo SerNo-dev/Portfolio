@@ -12,6 +12,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { Route,RouterModule } from '@angular/router';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ThreejsCarouselComponent } from './components/threejs-carousel/threejs-carousel.component';
 
 const routes : Route[] = [
   {
@@ -40,7 +41,8 @@ const routes : Route[] = [
     ServicesComponent,
     ContactComponent,
     PortfolioComponent,
-    FooterComponent
+    FooterComponent,
+    ThreejsCarouselComponent
   ],
   imports: [
     BrowserModule,

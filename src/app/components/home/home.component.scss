@@ -8,17 +8,11 @@ section {
 
 .home {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.card-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    position: relative;
-  height: auto;
-}
+
 
 .testo{
     width: 50vw;
@@ -32,7 +26,7 @@ section {
     clip-path: polygon(50% 30%, 90% 25%, 100% 74%, 50% 90%, 0% 74%, 0% 25%);
     border-radius: 20px;
     box-shadow: 0 8px 25px rgba(9, 19, 157, 0.3);
-    overflow: hidden;
+  
  
 }
 
@@ -46,18 +40,37 @@ section {
     border-radius: 20px;
     filter: brightness(1.1) drop-shadow(0px 0px 10px rgba(0, 0, 0, 1));
     image-rendering: auto;
-
+    overflow: hidden;
 
 }
+
+
 .card-container {
     display: flex;
     justify-content: center; 
     align-items: center; 
     position: relative;
-    width: 100%; 
     height: auto;
     overflow: hidden;
+
+    animation: floatImage 4s ease-in-out infinite;
+
 }
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+      
+}
+
+
+
 .card-image:hover {
     transform: translateX(-50%) scale(1.1); 
     transition: transform 0.3s ease;
@@ -138,14 +151,14 @@ cite {
 
 
 @media (max-width: 768px) { 
-
-    .home{
+    .home {
         flex-direction: column;
-        height: 130vw;
+        align-items: flex-start; 
     }
 
-    .home-content h3{
+    .home-content h3 {
         font-size: 2.6rem;
+  
     }
 
     .home-content h1 {
@@ -153,22 +166,24 @@ cite {
     }
 
 
-
-
-    .card-container {
-     bottom: 10em;
-
-    }
-
-    .hexagon{
-
+    .hexagon {
         width: 50vw;
         height: 50vw;
-   
+    }
 
-    }
-    .card-image{
+    .card-image {
         width: 138vw;
-   
     }
+
 }
+
+
+
+@media (min-width: 360px) {
+   
+    .home-content h1 {
+        white-space: nowrap;
+    }
+  
+}
+
