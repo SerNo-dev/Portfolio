@@ -22,7 +22,7 @@ const routes : Route[] = [
     path:'about',
     component: AboutComponent
   },{
-    path : 'services',
+    path : 'skills',
     component :ServicesComponent
   },{
     path: 'portfolio',

@@ -46,7 +46,8 @@ export class HomeComponent implements AfterViewInit {
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 1000,
-      loop: true
+      loop: false,
+      showCursor: false
     };
 
     new Typed(this.multipleText.nativeElement, options);
