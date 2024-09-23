@@ -45,7 +45,7 @@ export class ThreejsCarouselComponent implements OnInit {
     this.scene.add(directionalLight);
 
     const logos = [
-      { url: 'assets/imgs/java.png', name: 'Java' },
+       { url: 'assets/imgs/java.png', name: 'Java' },
       { url: 'assets/imgs/html.png', name: 'HTML' },
       { url: 'assets/imgs/css.png', name: 'CSS' },
       { url: 'assets/imgs/javascript.png', name: 'JavaScript' },
@@ -54,8 +54,7 @@ export class ThreejsCarouselComponent implements OnInit {
       { url: 'assets/imgs/sass.png', name: 'Sass' },
       { url: 'assets/imgs/postgresql.png', name: 'Postgresql' },
       { url: 'assets/imgs/typescript.png', name: 'Typescript' },
-      { url: 'assets/imgs/bootstrap.png', name: 'Bootstrap' },
-     
+      { url: 'assets/imgs/bootstrap.png', name: 'Bootstrap' },     
       { url: 'assets/imgs/git-logo.png', name: 'Git' },
     ];
 

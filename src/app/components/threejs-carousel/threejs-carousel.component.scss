@@ -7,3 +7,9 @@
     justify-content: center; /* Centra il contenuto orizzontalmente */
     align-items: flex-start; /* Allinea il contenuto verso l'alto */
 }
+
+@media (max-width: 768px) {
+    .threejs-carousel {
+        display: none;
+    }
+}
