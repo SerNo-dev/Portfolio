@@ -150,56 +150,38 @@ cite {
 }
 
 
-@media (max-width: 768px) { 
-    .home {
-        flex-direction: column;
-        align-items: flex-start; 
-    }
 
-    .home-content h3 {
-        font-size: 2.6rem;
-  
-    }
-
-    .home-content h1 {
-        font-size: 5rem;
-    }
-
-
-    .hexagon {
-        width: 50vw;
-        height: 50vw;
-    }
-
-    .card-image {
-        width: 138vw;
-    }
-
-}
-
-/* Media query per quando lo schermo è inferiore a 768px */
 @media (max-width: 768px) {
     .home {
         flex-direction: column; /* Cambia la direzione del flex a colonna */
         align-items: center; /* Centra gli elementi */
+    
     }
 
     .testo {
         width: 80vw; /* Aumenta la larghezza del testo per risoluzioni più basse */
     }
 
+    .home-content h3 {
+        font-size: 2.6rem; /* Adatta la dimensione del testo */
+    }
+
+    .home-content h1 {
+        font-size: 5rem; /* Adatta la dimensione del titolo */
+    }
+
     .hexagon {
-        width: 50vw; /* Riduci la dimensione dell'hexagon */
-        height: 50vw;
+        width: 80vw; /* Riduci la dimensione dell'hexagon */
+        height: 80vw;
+    }
+
+    .card-image {
+        width: 202.3vw; /* Adatta la larghezza dell'immagine */
     }
 
     .card-container {
-     
-        margin-top: 8em; 
-       
+        margin-top: 6em; /* Aggiungi spazio sopra la card-container */
     }
-
-
 }
 
 @media (min-width: 360px) {
